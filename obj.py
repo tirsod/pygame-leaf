@@ -1,10 +1,10 @@
 from engine import *
-from engine import Gameobject as gameobj
 
-class backgroundChanger(gameobj):
+class backgroundChanger(GameObject):
     r = 0
     g = 0
     b = 0
+
     def update(self):
         Engine.bg.set_color((self.r, self.g, self.b))
         if self.b < 255:
